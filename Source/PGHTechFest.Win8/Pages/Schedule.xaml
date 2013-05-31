@@ -141,15 +141,15 @@
         </Grid>
 
         <Grid Grid.Row="1" Grid.RowSpan="2" x:Name="ContentPanelSnapped" Visibility="Collapsed" >
-            <GridView ItemsSource="{Binding PresentationGroups}" SelectionMode="None" IsSwipeEnabled="True" 
-                      ItemTemplate="{StaticResource ScheduleItemTemplate}">
-                <GridView.ItemsPanel>
+            <ListView ItemsSource="{Binding PresentationGroups}" SelectionMode="None" IsSwipeEnabled="True" 
+                      ItemTemplate="{StaticResource ScheduleItemSummaryTemplate}">
+                <ListView.ItemsPanel>
                     <ItemsPanelTemplate>
                         <VirtualizingStackPanel Orientation="Vertical" Margin="12,0,0,0"/>
                     </ItemsPanelTemplate>
-                </GridView.ItemsPanel>
-                <GridView.ItemContainerStyle>
-                    <Style TargetType="GridViewItem">
+                </ListView.ItemsPanel>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
                         <Setter Property="Margin" Value="4" />
                         <Setter Property="Padding" Value="10" />
                         <Setter Property="Background" Value="{StaticResource ItemBackground}" />
@@ -159,8 +159,8 @@
                         <Setter Property="VerticalContentAlignment" Value="Stretch" />
                         <Setter Property="Width" Value="300" />
                     </Style>
-                </GridView.ItemContainerStyle>
-                <GridView.GroupStyle>
+                </ListView.ItemContainerStyle>
+                <ListView.GroupStyle>
                     <GroupStyle>
                         <GroupStyle.HeaderTemplate>
                             <DataTemplate>
@@ -178,12 +178,12 @@
                         </GroupStyle.HeaderTemplate>
                         <GroupStyle.Panel>
                             <ItemsPanelTemplate>
-                                <VariableSizedWrapGrid Orientation="Vertical" Margin="0,0,0,24"/>
+                                <VariableSizedWrapGrid Orientation="Vertical" Margin="0,0,0,12"/>
                             </ItemsPanelTemplate>
                         </GroupStyle.Panel>
                     </GroupStyle>
-                </GridView.GroupStyle>
-            </GridView>
+                </ListView.GroupStyle>
+            </ListView>
         </Grid>
 
         <VisualStateManager.VisualStateGroups>

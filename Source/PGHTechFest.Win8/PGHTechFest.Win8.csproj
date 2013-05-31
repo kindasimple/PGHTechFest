@@ -13,7 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>PGHTechFest.Win8_StoreKey.pfx</PackageCertificateKeyFile>
-    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
     <AppxPackageDir>C:\Users\Evan\Documents\GitHub\AppPackages\PGHTechFest.Win8\</AppxPackageDir>
     <PackageCertificateThumbprint>D823D33B301A306DFCB6412A1F77690EC4B80CF9</PackageCertificateThumbprint>
   </PropertyGroup>
@@ -159,8 +159,6 @@
     </AppxManifest>
     <None Include="Common\ReadMe.txt" />
     <None Include="packages.config" />
-    <None Include="PGHTechFest.Win8_StoreKey.pfx" />
-    <None Include="PGHTechFest.Win8_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\BadgeLogo.scale-100.png" />
