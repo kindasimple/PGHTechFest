@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="37360KindaSimple.PGHTechFest" Publisher="CN=17498BA3-3433-4A8A-B307-967631037FC8" Version="1.0.1.5" />
+  <Identity Name="37360KindaSimple.PGHTechFest" Publisher="CN=17498BA3-3433-4A8A-B307-967631037FC8" Version="1.0.2.7" />
   <Properties>
     <DisplayName>PGHTechFest</DisplayName>
     <PublisherDisplayName>KindaSimple</PublisherDisplayName>

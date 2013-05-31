@@ -9,34 +9,56 @@
     <SolidColorBrush x:Key="ItemHeaderBackground" Color="#FFFFFAC6"/>
     <SolidColorBrush x:Key="ItemBackground" Color="#FFF6D23A"/>
     <SolidColorBrush x:Key="ItemForeground" Color="#FF000000"/>
-    
+
     <DataTemplate x:Key="ScheduleItemTemplate">
         <Border Margin="0,0,0,12" Padding="4,8" BorderBrush="Transparent" Background="{StaticResource ItemBackground}" BorderThickness="2">
-        <Grid Margin="4">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="Auto" />
-            </Grid.ColumnDefinitions>
-            <TextBlock Text="{Binding track}" />
-            <TextBlock Text="{Binding room}" Grid.Column="1"/>
-            <TextBlock Text="{Binding presenters_name}" Grid.Row="1" Grid.ColumnSpan="2" FontSize="24" Margin="0,0,0,12"/>
-            <TextBlock Text="{Binding title}" Grid.Row="2" TextWrapping="Wrap" Grid.ColumnSpan="2" FontStyle="Italic" Margin="0,0,0,12"/>
-            <TextBlock Text="{Binding description}" Grid.Row="3" MaxHeight="220" Grid.ColumnSpan="2" TextWrapping="Wrap" TextTrimming="WordEllipsis"/>
-            <TextBlock Text="{Binding notes}" Grid.Row="4"/>
-        </Grid>
-    </Border>
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{Binding track}" />
+                <TextBlock Text="{Binding room}" Grid.Column="1"/>
+                <TextBlock Text="{Binding presenters_name}" Grid.Row="1" Grid.ColumnSpan="2" FontSize="24" Margin="0,0,0,12"/>
+                <TextBlock Text="{Binding title}" Grid.Row="2" TextWrapping="Wrap" Grid.ColumnSpan="2" FontStyle="Italic" Margin="0,0,0,12"/>
+                <TextBlock Text="{Binding description}" Grid.Row="3" MaxHeight="220" Grid.ColumnSpan="2" TextWrapping="Wrap" TextTrimming="WordEllipsis"/>
+                <TextBlock Text="{Binding notes}" Grid.Row="4" MaxHeight="220" Grid.ColumnSpan="2" TextWrapping="Wrap" TextTrimming="WordEllipsis"/>
+            </Grid>
+        </Border>
     </DataTemplate>
-    
+
+    <DataTemplate x:Key="ScheduleItemSummaryTemplate">
+        <Border Margin="0,0,0,12" Padding="4,4" BorderBrush="Transparent" Background="{StaticResource ItemBackground}" BorderThickness="2">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{Binding track}" />
+                <TextBlock Text="{Binding room}" Grid.Column="1"/>
+                <TextBlock Text="{Binding presenters_name}" Grid.Row="1" Grid.ColumnSpan="2" FontSize="24" Margin="0,0,0,12"/>
+                <TextBlock Text="{Binding title}" Grid.Row="2" TextWrapping="Wrap" Grid.ColumnSpan="2" FontStyle="Italic" Margin="0,0,0,6"/>
+            </Grid>
+        </Border>
+    </DataTemplate>
+
     <DataTemplate x:Key="SessionItemTemplate">
         <Border Margin="0,0,0,12" Padding="4,8" BorderBrush="Transparent" Background="{StaticResource ItemBackground}" BorderThickness="2">
             <Grid Margin="4">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
@@ -51,7 +73,27 @@
                 <TextBlock Text="{Binding presenter}"  Grid.Row="1" Grid.ColumnSpan="2" FontSize="24" Margin="0,0,0,12"/>
                 <TextBlock Text="{Binding title}" Grid.Row="2" TextWrapping="Wrap" Grid.ColumnSpan="2" FontStyle="Italic" Margin="0,0,0,12"/>
                 <TextBlock Text="{Binding description}" Grid.Row="3" MaxHeight="220" Grid.ColumnSpan="2" TextWrapping="Wrap" TextTrimming="WordEllipsis"/>
-                <TextBlock Text="{Binding notes}"/>
+                <TextBlock Text="{Binding notes}" Grid.Row="4" MaxHeight="220" Grid.ColumnSpan="2" TextWrapping="Wrap" TextTrimming="WordEllipsis"/>
+            </Grid>
+        </Border>
+    </DataTemplate>
+
+    <DataTemplate x:Key="SessionItemSummaryTemplate">
+        <Border Margin="0,0,0,12" Padding="4,4" BorderBrush="Transparent" Background="{StaticResource ItemBackground}" BorderThickness="2">
+            <Grid Margin="4">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{Binding track}" />
+                <TextBlock Text="{Binding room}" Grid.Column="1"/>
+                <TextBlock Text="{Binding presenter}"  Grid.Row="1" Grid.ColumnSpan="2" FontSize="24" Margin="0,0,0,12"/>
+                <TextBlock Text="{Binding title}" Grid.Row="2" TextWrapping="Wrap" Grid.ColumnSpan="2" FontStyle="Italic" Margin="0,0,0,12"/>
             </Grid>
         </Border>
     </DataTemplate>
