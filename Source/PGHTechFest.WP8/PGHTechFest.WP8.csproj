@@ -231,4 +231,7 @@
   </Target>
   -->
   <ProjectExtensions />
+  <PropertyGroup Condition=" '$(BuildingInsideVisualStudio)' != 'true' ">
+    <PostBuildEvent>xcopy "$(TargetDir)$(XapFilename)" "$(SolutionDir)..\..\AppPackages\" /y /i</PostBuildEvent>
+  </PropertyGroup>
 </Project>

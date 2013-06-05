@@ -1,0 +1,1 @@
+Call VS2012.build.bat "" "Debug" "Any CPU" "dev"

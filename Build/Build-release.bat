@@ -1,0 +1,1 @@
+Call VS2012.build.bat "" "Release" "Any CPU" "master"
