@@ -4,7 +4,8 @@ PGHTechFest
 Portable Class Library for consuming [Pittsburgh TechFest API] with sessions and speakers.
 
   - Web API library to easily consume json data service
-  - Windows 8 project for displaying sessions and speakers
+  - Windows 8 Application for displaying sessions and speakers
+  - Windows Phone 8 Application for displaying sessions and speakers
 
 Author
 -
