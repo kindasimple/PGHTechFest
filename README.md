@@ -10,8 +10,8 @@ Portable Class Library for consuming [Pittsburgh TechFest API] with sessions and
 Author
 -
 
-Evan White
-Twitter: [@kindasimple][1]
+Evan White  
+Twitter: [@kindasimple][1]  
 [Blog] 
 
 
@@ -30,6 +30,6 @@ The source code is under an [MIT] license.
 
  [Pittsburgh TechFest API]: http://pghtechfest.com/
  [1]: https://twitter.com/kindasimple
- [Blog]: http://kindasimple.com/dev/
+ [Blog]: http://kindasimplesolutions.com/
  [2]: http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US
  [MIT]: http://opensource.org/licenses/MIT
