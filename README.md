@@ -18,8 +18,6 @@ Twitter: [@kindasimple][1]
 License
 -
 
-The Pittsburgh TechFest logo and API 
-_
 The Pittsburgh TechFest logo and API is licensed under a [Creative Commons 
 Attribution-NonCommercial-NoDerivs 3.0 Unported License][2].
 
